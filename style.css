@@ -1,0 +1,145 @@
+/* let the maximum width and height be used */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /* declared the body color*/
+background-color: palegoldenrod;
+  /* I believe that normalize.css didnt activate as needed. I had a white border to the left and top of the whole site. I have asked my programmer friend to explain what is causing this in my code and we couldn't figure it out. This was the only solution I could use*/
+  margin: -8px;
+}
+
+/* made the links appear in different colors when hovered, clicked, etc */
+a:link    { color: ghostwhite;  }
+a:visited { color: ghostwhite;   }
+a:hover   { color: lightgray; }
+a:active  { color: yellowgreen;  }
+
+/* declared the background color, added 20px of padding to the bottom to add space between elements*/
+header {
+background-color: black;
+margin: 0px;
+padding-bottom: 20px;
+}
+
+/* declared the color of all text elements, aligned them at the center and added a font*/
+header, h1, h2, a {
+color: whitesmoke;
+font-family: rockwell, arial;
+text-align: center;
+ 
+}
+
+/* added blocks behind each link, made the links display in line, added some padding and margins to create appropriate spacing, rounded the boxes to ovals and removed the underlining */
+header a {
+  background-color: firebrick;
+  display: inline-block;
+  border: 5px firebrick solid;
+margin: 3px;
+  padding: 3px;
+border-radius: 60px;
+  text-decoration: none;
+
+}
+
+/* styled the horizontal divider in the header section to look differently from the main <hr> */
+header hr {
+border-color: firebrick;
+border-width: 4px;
+background-color: firebrick;
+  
+}
+
+/* changed the font size and spacing of the main headline */
+h1 {
+  font-size: 45px;
+  padding: 3px;
+  margin: 3px;
+}
+
+/* made the text inside each section align center and declared max:width to control how much the text spreads side to side */
+section{
+max-width: 1000px;
+  margin:auto;
+  
+}
+
+/* made the links inside the main section ignore the color pallete of the hover/active link code as it did not fit the color of the background */
+main a {
+color: green !important;
+
+  
+}
+
+/* styled the paragraph text inside of main to align to center, set the font, font-size, and added spacing to line up the elements as I please to design */
+main p {
+text-align: center;
+font-size: 16px;
+font-family: rockwell, arial;
+margin: 40px;
+  padding: 0px;
+}
+
+/* made the list align to the center no matter the user screen width */
+ul {
+  padding-left: 45%;
+  padding-right: 50%;
+}
+
+/* declared the font and font-size of the list text */
+li{
+font-size: 16px;
+font-family: rockwell, arial;
+}
+
+/* styling of the class linked to the image at the top of the page. Rounded the corners and added padding to add spacing*/
+.center-curve {
+display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 70px;
+}
+
+/* styling of the class applied to the two icons at the bottom. Declared specific spacing to make it look how I want it to.*/
+.center-less-padding{
+display: block;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* styling of the class of all of the h3 in the main body. aligned them at the center, declared the font and font size.*/
+.topic-headline {
+text-align: center;
+  font-family: rockwell, arial;
+  font-size: 25px;
+}
+
+/* styled the horizontal rule inside of main to look differently to the one in the header, to fit the color pallette better.  */
+main hr {
+border-color: black;
+border-width: 4px;
+background-color: firebrick;
+}
+
+/* declared the background color of the footer and manually corrected a white box. I ran into the same issue as with the body margin. Couldn't find another way to fix it. */
+footer {
+background-color: black;
+margin-top: -40px;
+
+}
+
+/* styled the text inside the footer, set color, aligned to center, declared same font as the rest of the text, set text size and added spacing to make the footer larger.*/
+footer p {
+color: lightgray;
+text-align: center;
+font-size: 16px;
+font-family: rockwell, arial;
+margin: 40px;
+  padding: 20px;
+}
