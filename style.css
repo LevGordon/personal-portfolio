@@ -68,7 +68,7 @@ max-width: 1000px;
 
 /* made the links inside the main section ignore the color pallete of the hover/active link code as it did not fit the color of the background */
 main a {
-color: green !important;
+color: blue !important;
 
   
 }
@@ -84,8 +84,16 @@ margin: 40px;
 
 /* made the list align to the center no matter the user screen width */
 ul {
-  padding-left: 45%;
+  padding-left: 40%;
   padding-right: 50%;
+}
+
+/* since this is a longer list, it requires different padding*/
+ol {
+padding-left: 35%;
+  padding-right: 35%;
+
+  
 }
 
 /* declared the font and font-size of the list text */
